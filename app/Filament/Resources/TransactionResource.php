@@ -87,14 +87,14 @@ class TransactionResource extends Resource
                     ->width(450)
                     ->height(225),
                 Tables\Columns\TextColumn::make('departement_name')
-                    ->numeric()
-                    ->sortable(),
+                    ->label('Department')
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('departement_semester')
-                    ->numeric()
-                    ->sortable(),
+                    ->label('Semester')
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('departement_cost')
-                    ->numeric()
-                    ->sortable(),
+                    ->label('Cost')
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
